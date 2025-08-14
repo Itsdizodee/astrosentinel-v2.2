@@ -5,8 +5,8 @@ Handles /start, /signals, /settings, and inline pair selection.
 import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
-from .strategy import generate_signal
-from .data_fetch import get_data
+from src.strategy import generate_signal
+from src.data_fetch import get_data
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
 
